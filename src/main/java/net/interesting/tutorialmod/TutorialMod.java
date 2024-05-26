@@ -1,6 +1,7 @@
 package net.interesting.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.interesting.tutorialmod.block.ModBlocks;
 import net.interesting.tutorialmod.item.ModCreativeModeTabs;
 import net.interesting.tutorialmod.item.Moditems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -34,6 +35,7 @@ public class TutorialMod {
         ModCreativeModeTabs.register(modEventBus);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
