@@ -2,6 +2,7 @@ package net.interesting.tutorialmod.item;
 
 import net.interesting.tutorialmod.TutorialMod;
 import net.interesting.tutorialmod.block.ModBlocks;
+import net.interesting.tutorialmod.block.custom.SoundBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -34,6 +35,8 @@ public class ModCreativeModeTabs {
                     output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                     output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                     output.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+
+                    output.accept(ModBlocks.SOUND_BLOCK.get());
 
                 })
                 .build());
